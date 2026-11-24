@@ -1,0 +1,18 @@
+# Replace every illustrative project ID, account and project number.
+delivery_project_id = "example-delivery"
+region              = "us-central1"
+service_name        = "release-demo"
+publisher_account   = "image-publisher@example-delivery.iam.gserviceaccount.com"
+
+environments = {
+  staging = {
+    project_id         = "example-staging"
+    execution_account  = "staging-exec@example-delivery.iam.gserviceaccount.com"
+    image_pull_account = "service-123456789012@serverless-robot-prod.iam.gserviceaccount.com"
+  }
+  production = {
+    project_id         = "example-production"
+    execution_account  = "production-exec@example-delivery.iam.gserviceaccount.com"
+    image_pull_account = "service-123456789013@serverless-robot-prod.iam.gserviceaccount.com"
+  }
+}
